@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #fbf4f1;
+}
+.text-light p{
+    color: #f8f9fa !important;
+    font-weight: 500;
+}
+.text-header {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #fbf4f1;
+}
+.text-title p {
+    color: #6c757d !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+.icon-content {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.text-title h5 {
+    color: #646464 !important;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+}
+.tick-title p {
+    color: #646464 !important;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+}
+.feature-card img {
+    width: 25px;
+    margin-bottom: 0px;
+}
+.leading-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}

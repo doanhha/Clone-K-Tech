@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <script src="./bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/web.css">
+    <title>K-TECH | Thiết kế website chuyên nghiệp</title>
+</head>
+
+<body>
+    <div id="container" style="background-color: #f8f9fa;">
+        <div id="menu" class="navbar-menu ">
+            <div class="row justify-content-around ml-0 mr-0">
+                <div class="title mt-2 text-light ">
+                    <P class="">Đổi mới công nghệ, tối đa hiệu quả</P>
+                </div>
+                <!-- logo -->
+                <div id="hotline-call" class="col-lg-3 col-md-7 col-sm-12 d-flex justify-content-around text-center"
+                    style="font-size: 12px;">
+                    <a href="tel:=+84924042444" class="text-light w-100 h-100 mt-2 text-decoration-none">
+                        <i class="fa-solid fa-phone w-100"> Hotline</i>
+                        0924.042.444
+                    </a>
+                    <div class="account w-100 h-100 mt-2">
+                        <a href="login.html" class="account-header text-light text-decoration-none" title="account"
+                            style="cursor: pointer;"> <b>Tài Khoản</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="banner">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">K-Tech</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Thiết kế Web <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="thiet-ke-app.html">Thiết kế App <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="blog.html" role="button" data-toggle="dropdown"
+                                aria-expanded="true"> Blog K_TECH
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="blog.html">Dự án</a>
+                                <a class="dropdown-item" href="blog.html">Về K-Tech</a>
+                                <a class="dropdown-item" href="blog.html">Kiến thức</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="blog.html">Thị trường</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Liên hệ<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-primary btn-color" data-toggle="modal"
+                        data-target="#exampleModal" data-whatever="@mdo">Tư vấn ngay</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Registration information:</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Name</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Phone or Email:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="banner" class="img-banner-home">
+                <div class="img-banner">
+                    <img src="./assets/img/Banner.webp" alt="" class="banner-large">
+                    <div class="img-experience">
+                        <img src="./assets/img/Web-02-768x214.webp" alt="" class="">
+                    </div>
+                    <div class="img-evaluate">
+                        <img src="./assets/img/Group-5.webp" alt="" class="title">
+                    </div>
+                    <div class="many-projects">
+                        <img src="./assets/img/Web-01-741x400.webp" alt="" class="">
+                    </div>
+                </div>
+            </div>
+            <div class="infomation mt-4">
+                <h1 class="text-trangchu mt-5">Thiết kế website <span class="span-vip">chuyên nghiệp</span> cùng K-Tech
+                </h1>
+                <div class="button-support d-flex justify-content-center mt-5 mb-5">
+                    <button class="advise mr-4">Bảng giá chi tiết</button>
+                    <button class="introduce ml-4">Nhận tư vấn ngay</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-content">
+            <h1 class="text-trangchu mt-5 mb-5">Dịch vụ <span class="span-vip">Thiết kế website</span></h1>
+            <div class="accomplish mt-4">
+                <div class=" row g-3 position-relative row-loiich">
+                    <div class="  col-12 col-sm-6 col-lg-3">
+                        <div class="text-staff p-3 text-center">
+                            <span class="span-data">6</span>
+                            <p>Năm kinh nghiệm</p>
+                        </div>
+                    </div>
+                    <div class="  col-12 col-sm-6 col-lg-3">
+                        <div class="text-staff p-3 text-center">
+                            <span class="span-data">1000++</span>
+                            <p>Dự án hoàn thành</p>
+                        </div>
+                    </div>
+                    <div class="  col-12 col-sm-6 col-lg-3">
+                        <div class="text-staff p-3 text-center">
+                            <span class="span-data">1,686+</span>
+                            <p>Khách hàng</p>
+                        </div>
+                    </div>
+                    <div class="  col-12 col-sm-6 col-lg-3">
+                        <div class="text-staff p-3 text-center">
+                            <span class="span-data">97%</span>
+                            <p>Khách hàng hài lòng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantage-web">
+            <h1 class="text-trangchu mt-5 mb-5">Lợi ích của <span class="span-vip">website chuyên nghiệp</span></h1>
+            <div class="container my-5">
+                <div class="row">
+                    <!-- Chuẩn SEO -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card h-100">
+                            <img src="./assets/img/Group.webp" alt="SEO">
+                            <h3>Chuẩn SEO</h3>
+                            <p>Trang web được tối ưu SEO với từ khóa, thẻ meta, URL thân thiện và tối ưu nội dung chất
+                                lượng, giúp đạt thứ hạng cao trên công cụ tìm kiếm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tốc độ -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card h-100">
+                            <img src="./assets/img/Speed.webp" alt="Tốc độ">
+                            <h3>Tốc độ</h3>
+                            <p>Tối ưu hình ảnh và tốc độ tải trang nhanh, giảm thiểu JavaScript/CSS và sử dụng CDN, cải
+                                thiện trải nghiệm người dùng.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tính năng đa dạng -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card h-100">
+                            <img src="./assets/img/Puzzle.webp" alt="Tính năng">
+                            <h3>Tính năng đa dạng</h3>
+                            <p>Tích hợp thương mại điện tử, thanh toán trực tuyến, tìm kiếm nâng cao tăng cường tương
+                                tác và chuyển đổi mua hàng.</p>
+                        </div>
+                    </div>
+
+                    <!-- Bảo mật tuyệt đối -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card h-100">
+                            <img src="./assets/img/Cyber-security.webp" alt="Bảo mật">
+                            <h3>Bảo mật tuyệt đối</h3>
+                            <p>Bảo vệ dữ liệu người dùng với HTTPS, ngăn chặn tấn công mạng bằng tường lửa và IDS.</p>
+                        </div>
+                    </div>
+
+                    <!-- Dễ dàng quản trị -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card h-100">
+                            <img src="./assets/img/Social-media.webp" alt="Quản trị">
+                            <h3>Dễ dàng quản trị</h3>
+                            <p>Hệ thống quản trị nội dung linh hoạt, dễ sử dụng, cập nhật thông tin nhanh chóng.</p>
+                        </div>
+                    </div>
+
+                    <!-- Kết nối -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card h-100">
+                            <img src="./assets/img/Social-media-1.webp" alt="Kết nối">
+                            <h3>Kết nối</h3>
+                            <p>Kết nối mạng xã hội, tăng khả năng tiếp cận khách hàng, thúc đẩy kinh doanh.</p>
+                        </div>
+                    </div>
+
+                    <!-- Nền tảng -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card h-100">
+                            <img src="./assets/img/Cloud.webp" alt="Nền tảng">
+                            <h3>Nền tảng</h3>
+                            <p>Chọn nền tảng WordPress với kho giao diện và plugin đa dạng, mở rộng linh hoạt.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chuẩn UI/UX -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card h-100">
+                            <img src="./assets/img/Ui.webp  " alt="UI/UX">
+                            <h3>Chuẩn UI/UX</h3>
+                            <p>Thiết kế UX/UI thẩm mỹ, tương thích mọi thiết bị, nâng cao trải nghiệm người dùng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reasons">
+            <h1 class="text-trangchu mt-5 mb-5">Vì sao nên chọn dịch vụ thiết kế website tại <span
+                    class="span-vip">K-TECH</span></h1>
+
+            <div class="container my-5">
+                <div class="row">
+                    <!-- Chuẩn SEO -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card feature-card2 h-100">
+                            <img class="img-feature" src="./assets/img/Chinh-sach-bao-hanh-tron-doi.webp" alt="SEO">
+                            <p>Chính sách bảo hành trọn đời, đồng hành cùng khách hàng xây dựng thương hiệu.</p>
+                        </div>
+                    </div>
+                    <!-- Tốc độ -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card feature-card2 h-100">
+                            <img class="img-feature" src="./assets/img/Thiet-ke-website-tron-goi.webp" alt="Tốc độ">
+                            <p>Thiết kế website trọn gói, đáp ứng mục tiêu của doanh nghiệp.</p>
+                        </div>
+                    </div>
+
+                    <!-- Tính năng đa dạng -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card feature-card2 h-100">
+                            <img class="img-feature" src="./assets/img/Kinh-nghiem-thiet-ke-website-chuan.webp"
+                                alt="Tính năng">
+                            <p>6+ năm kinh nghiệm thiết kế website chuẩn SEO dễ dàng on top Google.</p>
+                        </div>
+                    </div>
+
+                    <!-- Bảo mật tuyệt đối -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card feature-card2 h-100">
+                            <img class="img-feature" src="./assets/img/Dam-bao-website-dat-chat-luong-cao.webp"
+                                alt="Bảo mật">
+                            <p>Đảm bảo website đạt chất lượng cao, tương xứng với giá trị và chi phí.</p>
+                        </div>
+                    </div>
+
+                    <!-- Dễ dàng quản trị -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card feature-card2 h-100">
+                            <img class="img-feature" src="./assets/img/Hinh-2.webp" alt="Quản trị">
+                            <p>Luôn sẵn sàng hỗ trợ và tư vấn khách hàng tận tâm, mang lại sự an tâm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Kết nối -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="feature-card feature-card2 h-100">
+                            <img class="img-feature" src="./assets/img/Thiet-ke-theo-yeu-cau.webp" alt="Kết nối">
+                            <p>Thiết kế website theo yêu cầu, linh hoạt với hơn 2000+ giao diện mẫu website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-quytrinh">
+            <div class="container mt-4">
+                <h1 class="text-trangchu mt-5 mb-5">Quy trình làm việc tại <span class="span-vip">K-TECH</span></h1>
+                <div class="row">
+                    <!-- Cột trái: danh sách bước -->
+                    <div class="col-md-4 procedure">
+                        <div class="procedure-box">
+                            <h5>Quy trình làm việc</h5>
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-step1"
+                                    data-toggle="list" href="#step1" role="tab">1 - Tìm hiểu thông tin, yêu cầu của
+                                    khách hàng</a>
+                                <a class="list-group-item list-group-item-action" id="list-step2" data-toggle="list"
+                                    href="#step2" role="tab">2 - Lập kế hoạch và báo giá</a>
+                                <a class="list-group-item list-group-item-action" id="list-step3" data-toggle="list"
+                                    href="#step3" role="tab">3 - Ký kết hợp đồng</a>
+                                <a class="list-group-item list-group-item-action" id="list-step4" data-toggle="list"
+                                    href="#step4" role="tab">4 - Thiết kế và phát triển</a>
+                                <a class="list-group-item list-group-item-action" id="list-step5" data-toggle="list"
+                                    href="#step5" role="tab">5 - Kiểm thử và tối ưu hóa</a>
+                                <a class="list-group-item list-group-item-action" id="list-step6" data-toggle="list"
+                                    href="#step6" role="tab">6 -Xem xét các phản hồi của khách</a>
+                                <a class="list-group-item list-group-item-action" id="list-step7" data-toggle="list"
+                                    href="#step7" role="tab">7 - Hướng dẫn và bàn giao dự án</a>
+                                <a class="list-group-item list-group-item-action" id="list-step8" data-toggle="list"
+                                    href="#step8" role="tab">8 - Hỗ trợ và bảo trì sau bàn giao</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cột phải: nội dung -->
+                    <div class="col-md-8 bg-white bg-edit-color">
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- Bước 1 -->
+                            <div class="tab-pane fade show active" id="step1" role="tabpanel"
+                                aria-labelledby="list-step1">
+                                <h4 class="text-danger">Tiếp nhận yêu cầu sử dụng dịch vụ</h4>
+                                <p><strong>Tìm hiểu Nhu Cầu:</strong> Tiến hành cuộc gọi hoặc gặp gỡ trực tiếp với khách
+                                    hàng để thu thập các yêu cầu cụ thể và hiểu rõ mục tiêu và nội dung chính mà website
+                                    cần đạt được.</p>
+                                <p><strong>Phân tích và đề xuất:</strong>Dựa trên thông tin đã có, phân tích và đề xuất
+                                    giải pháp thiết kế, công nghệ phù hợp.</p>
+                                <img src="./assets/img/buoc_1_2-597x400.webp" class="img-fluid rounded" alt="">
+                            </div>
+
+                            <!-- Bước 2 -->
+                            <div class="tab-pane fade" id="step2" role="tabpanel" aria-labelledby="list-step2">
+                                <h4 class="text-danger">Lập kế hoạch và báo giá</h4>
+                                <p><strong>Lập kế hoạch dự án và báo giá:</strong> Thiết lập timeline, phân công nhiệm
+                                    vụ cho đội ngũ, gửi báo giá chi tiết dựa trên yêu cầu và phạm vi công việc đã thống
+                                    nhất.</p>
+                                <img src="./assets/img/buoc2_1-597x400.webp" class="img-fluid rounded" alt="">
+                            </div>
+
+                            <!-- Bước 3 -->
+                            <div class="tab-pane fade" id="step3" role="tabpanel" aria-labelledby="list-step3">
+                                <h4 class="text-danger">Ký kết hợp đồng</h4>
+                                <p><strong>Thỏa thuận hợp đồng:</strong> Soạn thảo và ký kết hợp đồng với khách hàng,
+                                    đảm bảo rằng cả hai bên đều rõ ràng về phạm vi công việc, chi phí, thời gian hoàn
+                                    thành, và các điều khoản khác.</p>
+                                <img src="./assets/img/buoc-3_1-600x400.webp" class="img-fluid rounded" alt="">
+                            </div>
+
+                            <!-- Bước 4 -->
+                            <div class="tab-pane fade" id="step4" role="tabpanel" aria-labelledby="list-step4">
+                                <h4 class="text-danger">Thiết kế và phát triển</h4>
+                                <p><strong>Thiết kế & UX/UI:</strong> Chuyển hóa dữ liệu thành thiết kế sáng tạo, trải
+                                    nghiệm người dùng thú vị, và giao diện bắt mắt.</p>
+                                <p><strong>Phát triển & Lập trình:</strong>Biến thiết kế thành mã lập trình chất lượng,
+                                    đảm bảo các tính năng hoạt động mượt mà, website tương thích với các thiết bị trình
+                                    duyệt khác nhau và bảo mật thông tin.</p>
+                                <img src="./assets/img/buoc-4_1-600x400.webp" class="img-fluid rounded" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="step5" role="tabpanel" aria-labelledby="list-step5">
+                                <h4 class="text-danger">Kiểm thử và tối ưu</h4>
+                                <p><strong>Kiểm thử:</strong>Kiểm tra kỹ lưỡng từng chi tiết, sửa chữa lỗi và tối ưu hóa
+                                    sản phẩm để đạt hiệu suất cao nhất.</p>
+                                <p><strong>Tối ưu SEO:</strong>Tối ưu hóa website cho SEO, bao gồm tối ưu tốc độ tải
+                                    trang, Meta tags, và nội dung.</p>
+                                <img src="./assets/img/buoc-5_1-600x400.webp" class="img-fluid rounded" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="step6" role="tabpanel" aria-labelledby="list-step6">
+                                <h4 class="text-danger">Xem xét các phản hồi của khách</h4>
+                                <p><strong>Trình bày bản thảo và chỉnh sửa:</strong>Gửi bản thảo website cho khách hàng
+                                    xem xét, Thực hiện các chỉnh sửa dựa trên phản hồi của khách hàng để đạt được sự hài
+                                    lòng tối đa.</p>
+                                <img src="./assets/img/buoc_6_2-597x400.webp" class="img-fluid rounded" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="step7" role="tabpanel" aria-labelledby="list-step7">
+                                <h4 class="text-danger">Hướng dẫn và bàn giao dự án</h4>
+                                <p><strong>Hướng dẫn sử dụng:</strong>Cung cấp tài liệu hướng dẫn cho khách hàng về cách
+                                    vận hành, quản lý hỗ trợ triển khai và theo dõi mọi phản hồi để cải thiện liên tục.
+                                </p>
+                                <img src="./assets/img/buoc-_7_3-597x400.webp" class="img-fluid rounded" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="step8" role="tabpanel" aria-labelledby="list-step8">
+                                <h4 class="text-danger">Hỗ trợ và bảo trì sau bàn giao</h4>
+                                <p><strong>Hỗ trợ kỹ thuật:</strong> Dịch vụ hỗ trợ và bảo trì sau bàn giao không ngừng
+                                    nghỉ, đảm bảo website luôn hoạt động trơn tru và hiệu quả.</p>
+                                <img src="./assets/img/buoc_8_3-597x400.webp" class="img-fluid rounded" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="typical-project-solution">
+            <h1 class="text-trangchu mt-5 mb-5"> <span class="span-vip">1000+</span> Dự án tiêu biểu từ K-TECH </h1>
+            <p>Dưới đây là những dự án thiết kế website trọn gói từ quy mô nhỏ đến lớn, giúp khách hàng tìm được
+                giải pháp nâng tầm thương hiệu và tiếp cận
+                khách hàng tiềm năng trên thị trường trực tuyến</p>
+            <div class="typical-project">
+                <div class="preview-box">
+                    <div class="preview-img">
+                        <!-- Ví dụ ảnh dài 1200px, khung chỉ 500px -->
+                        <img src="./assets/img/website-tu-van-du-hoc-han-quoc-487x1536.webp" alt="Preview Website">
+                        <div class="text-preview">
+                            <h4>WEBSITE TƯ VẤN DU HỌC HÀN QUỐC</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-box">
+                    <div class="preview-img">
+                        <!-- Ví dụ ảnh dài 1200px, khung chỉ 500px -->
+                        <img src="./assets/img/website-dang-ky-khoa-hoc-online-377x800.webp" alt="Preview Website">
+                        <div class="text-preview">
+                            <h4>WEBSITE ĐĂNG KÝ KHÓA HỌC</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-box">
+                    <div class="preview-img">
+                        <!-- Ví dụ ảnh dài 1200px, khung chỉ 500px -->
+                        <img src="./assets/img/website-ban-may-pha-ca-phe-scaled.webp" alt="Preview Website">
+                        <div class="text-preview">
+                            <h4>WEBSITE BÁN MÁY PHA CÀ PHÊ</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview-box">
+                    <div class="preview-img">
+                        <!-- Ví dụ ảnh dài 1200px, khung chỉ 500px -->
+                        <img src="./assets/img/ao-dai-ngoc-lan-425x2048.webp" alt="Preview Website">
+                    </div>
+                    <div class="text-preview">
+                        <h4>WEBSITE ÁO DÀI</h4>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mt-4 ">
+                    <li class="page-item">
+                        <a class="page-link text-dark" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link text-dark" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Leading-partners">
+                <h1>ĐỐI TÁC HÀNG ĐẦU</h1>
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-lg-3 mt-4">
+                        <div class="cart-leading-partners2 p-3 text-center">
+                            <img src="./assets/img/Logo-VNPAY-QR-1.webp" alt="" class="leading-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-4">
+                        <div class="cart-leading-partners2 p-3 text-center">
+                            <img src="./assets/img/ZaloPay_Logo.png" alt="" class="leading-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-4">
+                        <div class="cart-leading-partners2 p-3 text-center">
+                            <img src="./assets/img/Png.webp" alt="" class="leading-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-4">
+                        <div class="cart-leading-partners2 p-3 text-center">
+                            <img src="./assets/img/PayPal_logo.svg.webp" alt="" class="leading-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="container faq-section">
+            <h5>Giải đáp thắc mắc</h5>
+            <h1 class="text-trangchu mb-5">Bạn hỏi K-TECH <span class="span-vip">trả lời</span></h1>
+            <p>Bạn đang băn khoăn về các dịch vụ thiết kế website tại K-Tech, chúng tôi luôn sẵn sàng giải đáp mọi thắc
+                mắc của quý khách hàng</p>
+            <div class="row align-items-center">
+                <!-- Cột trái: ảnh -->
+                <div class="col-md-6 faq-image">
+                    <img src="./assets/img/Group-62434-632x1024.webp" alt="Nhân sự">
+                    <!-- Icon bay xung quanh (có thể chỉnh animation CSS) -->
+                    <div class="faq-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+
+                <!-- Cột phải: accordion -->
+                <div class="col-md-6">
+                    <div class="accordion" id="faqAccordion">
+
+                        <div class="card card-faq ">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btn-faq " type="button"
+                                        data-toggle="collapse" data-target="#collapseOne">Thiết kế website chuẩn seo là
+                                        gì?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Website chuẩn SEO là một trang web được tối ưu theo tiêu chuẩn của công cụ tìm kiếm
+                                    mà người
+                                    dùng sử dụng để truy vấn kết quả. Quá trình này bao gồm việc thiết lập các cấu trúc,
+                                    xây dựng
+                                    nội dung và các yếu tố kỹ thuật khác, giúp website đạt vị trí cao trên kết quả tìm
+                                    kiếm tự n
+                                    hiên của Google, Bing hoặc các công cụ tìm kiếm khác.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-faq ">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btn-faq collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo">Thiết kế web responsive là
+                                        gì?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#faqAccordion">
+                                <div class="card-body">Thiết kế web responsive là quá trình thiết kế và phát triển
+                                    trang web sao cho giao diện và cấu trúc có thể tự động điều chỉnh để hiển thị tối ưu
+                                    phù hợp với
+                                    kích thước màn hình của các thiết bị khác như điện thoại di động, máy tính bảng, máy
+                                    tính xách tay hoặc để bàn.</div>
+                            </div>
+                        </div>
+
+                        <div class="card card-faq ">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btn-faq collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree">Thời gian K-Tech hoàn thành dự án là bao lâu ?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#faqAccordion">
+                                <div class="card-body">Thời gian hoàn thành dự án thiết kế website có thể 
+                                    biến đổi tùy thuộc vào phạm vi, mức độ phức tạp và quy trình làm việc của nhà thiết kế. Các dự án website 
+                                    cơ bản sẽ hoàn thành trong 1 đến 3 ngày, đối với dự án lớn đòi hỏi nhiều tính năng tùy chỉnh, 
+                                    độ phức tạp cao, nhà thiết kế cần nhiều thời gian hơn để hoàn thành dự án</div>
+                            </div>
+                        </div>
+                        <div class="card card-faq ">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btn-faq collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour">K-Tech có các đối tác về cổng thanh toán và vận chuyển nào?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-parent="#faqAccordion">
+                                <div class="card-body">Trong quá trình triển khai hơn 1686 khách hàng trong và ngoài nước, K-Tech vinh dự khi được 
+                                    sự hỗ trợ với các đối tác về cổng thanh toán như MOMO, ZALO PAY, VNPAY, PAYPAL,… và các đối tác vận chuyển như 
+                                    Ahamove, Viettel Post, GHN, GHTK,.. Bên cạnh đó,
+                                    K-Tech còn tích hợp các sàn thương mại điện tử lớn như Shopee, Lazada,.. Để mang lại giải pháp website tối ưu cho khách hàng.</div>
+                            </div>
+                        </div>
+
+                        <div class="card card-faq ">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btn-faq collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFive">Quá trình bảo trì và nâng cấp của K-Tech như thế nào?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" data-parent="#faqAccordion">
+                                <div class="card-body">K-Tech cam kết bảo trì website của bạn trọn đời sau khi sản phẩm được bàn giao. 
+                                    Chúng tôi sẵn lòng hoạt động 24/24 để hỗ trợ và khắc phục mọi sự cố phát sinh. Đồng thời, chúng tôi không ngừng nâng cấp
+                                     và cải tiến để đảm bảo rằng website của bạn luôn hoạt động mượt mà và hiệu quả.</div>
+                            </div>
+                        </div>
+                        <div class="card card-faq ">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btn-faq collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseSix">K-TECH có dịch vụ sửa chữa và nâng cấp website không?</button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" data-parent="#faqAccordion">
+                                <div class="card-body">Có. K-TECH cung cấp dịch vụ sửa chữa và nâng cấp website trọn gói, 
+                                    từ việc khắc phục lỗi kỹ thuật, lỗi hiển thị, tối ưu tốc độ tải trang cho đến nâng cấp giao diện và bổ sung tính năng mới theo yêu cầu. Bên cạnh đó,
+                                     K-TECH còn hỗ trợ cập nhật bảo mật giúp website vận hành ổn định, an toàn và mang lại trải nghiệm tốt hơn cho người dùng.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="bg-dark text-light pt-5 pb-4 ">
+        <div class="container ">
+            <!-- Hàng 1: các chính sách -->
+            <div class="row text-center text-md-left mb-4">
+                <div class="policy col-md-3">
+                    <img src=".assets/img/policy_1.webp " alt="" class="mb-3">
+                    <a href="">
+                        <h6 class="text-uppercase font-weight-bold">Hỗ trợ kỹ thuật </h6>
+                    </a>
+                    <p>dha.admin@gmail.com</p>
+                </div>
+                <div class=" policy col-md-3">
+                    <img src=".assets/img/policy_2.webp" alt="" class="mb-3">
+                    <a href="">
+                        <h6 class="text-uppercase font-weight-bold">Góp ý</h6>
+                    </a>
+                    <p>dha.admin@gmail.com</p>
+                </div>
+                <div class="policy col-md-3">
+                    <img src=".assets/img/policy_3.webp" alt="" class="mb-3">
+                    <a href="">
+                        <h6 class="text-uppercase font-weight-bold">Tư vấn</h6>
+                    </a>
+                    <p>dha.admin@gmail.com</p>
+                </div>
+                <div class="policy col-md-3">
+                    <img src=".assets/img/policy_4.webp" alt="" class="mb-3">
+                    <a href="">
+                        <h6 class="text-uppercase font-weight-bold">Tuyển dụng</h6>
+                    </a>
+                    <p>dha.admin@gmail.com</p>
+                </div>
+            </div>
+
+            <hr class="bg-secondary">
+
+            <!-- Hàng 2: thông tin chi tiết -->
+            <div class="row text-center text-md-left">
+                <!-- Logo & liên hệ -->
+                <div class="col-xl-3 col-lg-12 col-md-12 col-12 foo-col-1">
+                    <img src="./assets/img/logo-ktech.webp" alt="Logo" class="mb-3" style="max-width: 150px;">
+                    <p><i class="fas fa-map-marker-alt"></i> 8/11/36 Phú Đô, Nam Từ Liêm, Hà Nội</p>
+                    <p><i class="fas fa-phone-alt"></i> 0924.042.444 </p>
+                    <p><i class="fas fa-envelope"></i> doanhha880@gmail.com</p>
+                </div>
+
+                <!-- Cột thông tin -->
+                <div class="text-color col-xl-3 col-lg-12 col-md-12 col-12 foo-col-1">
+                    <h5>Thông tin</h5>
+                    <ul class="list-unstyled" style="font-weight: bold;">
+                        <li class="mb-2 "><a href="" class="text-light" style="margin-bottom: 5px;">Trang chủ</a></li>
+                        <li class="mb-2"><a href="" class="text-light">Giới thiệu</a></li>
+                        <li class="mb-2"><a href="" class="text-light">Sản phẩm</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột khách hàng -->
+                <div class="col-xl-3 col-lg-12 col-md-12 col-12 foo-col-1 text-color">
+                    <h5>Khách hàng</h5>
+                    <ul class="list-unstyled" style="font-weight: bold;">
+                        <li class="mb-2 "><a href="#" class="text-light">Chính sách vận chuyển</a></li>
+                        <li class="mb-2 "><a href="#" class="text-light">Chính sách đổi trả</a></li>
+                        <li class="mb-2 "><a href="#" class="text-light">Quy định sử dụng</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột thanh toán & MXH -->
+                <div class="col-xl-3 col-lg-12 col-md-12 col-12 foo-col-1 text-color">
+                    <h5 class="ml-3">Chấp nhận thanh toán</h5>
+                    <div class="payment d-flex justify-content-center">
+                        <img src="./assets/img/payment_1.png" alt="Visa" style="max-width: 100%; height: auto;">
+                        <img src="./assets/img/payment_2.png" alt="Visa" style="max-width: 100%; height: auto;">
+                        <img src="./assets/img/payment_3.jpg" alt="Visa" style="max-width: 100%; height: auto;">
+                        <img src="./assets/img/payment_4.jpg" alt="Visa" style="max-width: 100%; height: auto;">
+                    </div>
+                    <h6 class="mt-3 ml-3">Theo dõi chúng tôi</h6>
+                    <div class="social-network ml-3">
+                        <a href="#"><i class="fab fa-facebook-f text-light mr-3"></i></a>
+                        <a href="#"><i class="fab fa-youtube text-light mr-3"></i></a>
+                        <a href="#"><i class="fab fa-tiktok text-light mr-3"></i></a>
+                        <a href="#"><i class="fas fa-store text-light"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="mb-0 text-secondary">Cung cấp bởi <a href="">Doanh Hà</a></p>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body> 
+</html>

@@ -1,0 +1,98 @@
+.uppercase {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.banner {
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.banner p {
+    font-size: 18px;
+    color: #646464;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 400;
+}
+.banner h3 {
+    font-size: 36px;
+    color: #646464;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.stack {
+    background-color: #fae3db;
+    padding: 10px 0;
+    text-align: center; 
+    justify-content: center;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+}
+.stack a {
+    color: #c8401f;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.stack a:hover {
+    color: #fff;
+    border-radius: 5px;
+    transform: translateY(-5px);
+}
+.attachment-original {
+  max-width: 350px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+}
+
+.attachment-original img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: block;
+}
+
+.box-vertical {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.box-img {
+  flex: 0 0 40%; /* ảnh chiếm 40% chiều ngang */
+}
+
+.box-img img {
+  width: 100%;
+  border-radius: 15px !important;
+}
+
+.box-text {
+  flex: 1;
+}
+.post-title a {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: #c8401f;
+    font-size: 20px;
+    font-weight: 700;
+}
+.post-title a:hover {
+    transform: scale(1.05);
+}
+.col-lg-4 {
+  display: flex;
+  justify-content: center; /* căn ngang */
+  align-items: center;     /* căn dọc */
+}

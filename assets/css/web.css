@@ -1,0 +1,272 @@
+html {
+    background-color: #f8f9fa;
+    height: 5000px;
+}
+
+.img-banner {
+    width: 100%;
+    /* khung banner chiếm hết chiều ngang cha */
+    max-width: 1110px;
+    /* không vượt quá 1110px */
+    height: auto;
+    /* chiều cao tự động theo ảnh */
+    margin: 0 auto;
+    /* căn giữa khi màn hình lớn */
+    position: relative;
+}
+
+.banner-large {
+    width: 100%;
+    /* ảnh chiếm hết khung .img-banner */
+    height: auto;
+    /* giữ đúng tỷ lệ gốc, không méo */
+    display: block;
+    /* bỏ khoảng trắng dưới ảnh */
+}
+
+.title {
+    font-size: 16px;
+}
+.title p {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.img-experience {
+    position: absolute;
+    width: 182px;
+    height: 50px;
+    top: 50%;
+    right: 0;
+}
+
+.img-experience img,
+.many-projects img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.many-projects {
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    top: 143px;
+    right: 150px;
+}
+
+.img-evaluate {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 13%;
+}
+
+.img-evaluate img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.text-trangchu {
+    font-size: 50px;
+    color: #646464;
+    align-items: center;
+    align-items: center;
+    margin-top: 20px;
+    white-space: normal;
+    display: block;
+    text-align: center;
+    max-width: 900px;
+    /* giới hạn độ rộng, chữ sẽ tự xuống dòng */
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.span-vip {
+    padding-block: 10px;
+    /*  Tạo khoảng cách trên + dưới cho chữ.*/
+    background: linear-gradient(90deg, #8D1A1A 0%, #E15021 100%);
+    /*  Tạo background dạng gradient màu đỏ → cam chạy ngang 90°..*/
+    -webkit-background-clip: text;
+    /*  Cắt background theo hình dạng chữ (chỉ phần chữ mới hiện gradient).*/
+    -webkit-text-fill-color: transparent;
+    /* Làm chữ trong suốt để background gradient bên dưới hiện ra.*/
+}
+
+.advise,
+.introduce {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.advise:hover,
+.introduce:hover {
+    color: #646464;
+}
+
+.row-loiich {
+    height: 200px;
+}
+
+.text-center {
+    width: 100%;
+    padding: 0 !important;
+    height: 100%;
+}
+
+.span-data {
+    padding-block: 10px;
+    /*  Tạo khoảng cách trên + dưới cho chữ.*/
+    background: linear-gradient(90deg, #8D1A1A 0%, #E15021 100%);
+    /*  Tạo background dạng gradient màu đỏ → cam chạy ngang 90°..*/
+    -webkit-background-clip: text;
+    /*  Cắt background theo hình dạng chữ (chỉ phần chữ mới hiện gradient).*/
+    -webkit-text-fill-color: transparent;
+    /* Làm chữ trong suốt để background gradient bên dưới hiện ra.*/
+    font-size: 50px;
+}
+
+.text-staff {
+    flex-direction: column;
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+.text-staff p {
+    color: #646464;
+    font-weight: 500;
+}
+
+.icon-img {
+    width: 175px;
+    margin: 0 auto;
+    /* căn giữa khối ảnh */
+}
+
+.icon-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.card-img-advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* căn giữa ngang */
+    text-align: center;
+    /* chữ căn giữa */
+    padding: 20px;
+}
+
+/* Khối card chính */
+.feature-card {
+    background: #fff;  /*nền trắng */
+    padding: 25px 20px;
+    /* khoảng cách bên trong */
+    border-radius: 16px;
+    /* bo góc */
+    /* box-shadow: 0 4px 12px rgba(0,0,0,0.08); bóng đổ nhẹ */
+    text-align: left;
+    /* căn trái nội dung */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* hiệu ứng hover */
+}
+
+/* Hiệu ứng khi hover card */
+.feature-card:hover {
+    transform: translateY(-5px);
+    /* nổi lên 5px */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    /* bóng đổ đậm hơn */
+    cursor: pointer;
+}
+
+/* Ảnh icon trong card */
+.feature-card img {
+    width: 60px;
+    /* chiều rộng icon */
+    margin-bottom: 15px;
+    /* khoảng cách dưới icon */
+}
+
+.feature-card .img-feature {
+    width: 270px;
+    /* chiều rộng icon */
+    margin-bottom: 15px;
+    /* khoảng cách dưới icon */
+}
+
+/* Tiêu đề trong card */
+.feature-card h3 {
+    font-size: 20px;
+    /* cỡ chữ */
+    font-weight: 700;
+    /* đậm chữ */
+    margin-bottom: 10px;
+    /* khoảng cách dưới tiêu đề */
+    color: #333;
+    /* màu chữ */
+}
+
+/* Nội dung mô tả */
+.feature-card p {
+    font-size: 15px;
+    /* cỡ chữ nhỏ hơn */
+    line-height: 1.6;
+    /* giãn dòng dễ đọc */
+    color: #666;
+    /* màu chữ xám */
+}
+
+.feature-card2 p {
+    font-weight: 600;
+    font-size: 16px;
+}
+.procedure-box h5 {
+    color: #666;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.img-fluid {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.list-group a {
+    font-weight: 700;
+}
+
+.typical-project-solution h1 {
+    color: #646464;
+}
+.typical-project-solution p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #646464;
+}
+.faq-section h5 , p {
+    text-align: center;
+    color: #646464;
+}
+.faq-section p {
+    font-weight: 500;
+}
+.policy {
+    text-align: center;
+}
